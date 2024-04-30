@@ -22,7 +22,7 @@ body {
 }
 
 .Italicized-word {
-  @apply font-semibold underline underline-offset-8 decoration-slate-400 -rotate-2
+  @apply font-semibold underline underline-offset-8 decoration-slate-400 -rotate-2 uppercase
 }
 
 .img-background {

@@ -63,7 +63,7 @@ export default function Hero() {
         </motion.button>
       </div>
       <motion.div
-        className="img-background rounded-full"
+        className="img-background rounded-full sm:w-fit w-[380px]"
         variants={slideInFromRight(0.6)}
       >
         <Image
