@@ -19,7 +19,7 @@ export default function Projects() {
             <Link href={project.link} key={index}>
               <div className="mb-10 border border-slate-500 sm:w-[430px] rounded-lg">
                 <DirectionAwareHover
-                  className="w-[428px] h-[250px]"
+                  className="max-w-[428px] h-[250px]"
                   imageUrl={project.cover}
                 >
                   <div className="space-y-5">
