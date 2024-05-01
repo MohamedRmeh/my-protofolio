@@ -32,7 +32,7 @@ export const data = [
       SiExpress,
       SiMongodb,
     ],
-    link: "/",
+    link: "https://github.com/MohamedRmeh/explore_movies.git",
     cover: "/images/projectthreet.png",
     desc: "lorem ipsum dolor sit amet consectetur adipisicing elit Velit dicta a laboriosam obcaecati earum temporibus voluptates ipsum?",
   },

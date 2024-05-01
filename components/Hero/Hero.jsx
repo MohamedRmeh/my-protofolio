@@ -10,6 +10,10 @@ import {
 } from "@/app/utils/motion";
 
 export default function Hero() {
+  const handleContactClick = () => {
+    // توجيه المستخدم إلى رابط واتساب عند النقر على الزر
+    window.open('https://wa.me/+963993464702', '_blank');
+  };
   return (
     <motion.section
       className="borde mb-14 px-12 py-10 flex flex-col gap-8 lg:gap-0 lg:flex-row justify-between items-center common-background"
@@ -56,6 +60,7 @@ export default function Hero() {
           to buy the best service.
         </motion.p>
         <motion.button
+        onClick={handleContactClick}
           className="inline-flex lg:w-fit h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors uppercase focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
           variants={slideInFromLeft(0.5)}
         >

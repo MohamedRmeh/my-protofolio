@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Navbar() {
   const social = [
     {
-      link: "/",
+      link: "https://github.com/MohamedRmeh",
       label: "github",
       Icon: SiGithub,
     },
