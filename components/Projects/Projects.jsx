@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <section className="mb-14">
       <div>
-        <div className="flex justify-center items-center flex-col">
+        <div className="flex justify-center items-center flex-col mb-10">
           <h1 className="sm:text-5xl text-4xl font-semibold gradient-text Italicized-word">
             Projects
           </h1>
@@ -17,9 +17,9 @@ export default function Projects() {
         <div className="max-w-5xl mx-auto px-8 flex justify-between flex-wrap flex-col items-center lg:flex-row  mb-10">
           {data.map((project, index) => (
             <Link href={project.link} key={index}>
-              <div className="mb-10 border border-slate-500 sm:w-[430px] rounded-lg">
+              <div className="mb-10 border border-slate-500 sm:w-[440px] rounded-lg">
                 <DirectionAwareHover
-                  className="max-w-[428px] h-[250px]"
+                  className="w-full h-[250px]"
                   imageUrl={project.cover}
                 >
                   <div className="space-y-5">
