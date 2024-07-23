@@ -24,7 +24,7 @@ export default function Navbar() {
       <div className="flex justify-between items-center">
         <Link href="/">
           <h1 className="gradient-text sm:text-2xl text-lg uppercase Italicized-word">
-            Mox Developer
+            MO Developer
           </h1>
         </Link>
         <div className="flex gap-5">

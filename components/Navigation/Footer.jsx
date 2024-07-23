@@ -24,7 +24,7 @@ export default function Footer () {
       <hr className="lg:w-[1200px] w-[300px] md:w-[700px] sm:w-[400px] border-t-2 border-neutral-400" />
        <Link href="/">
           <h1 className="gradient-text sm:text-2xl text-lg uppercase Italicized-word">
-            Mox Developer
+            Mo Developer
           </h1>
         </Link>
       <div className='flex justify-center gap-5'>
