@@ -12,7 +12,7 @@ import {
 export default function Hero() {
   const handleContactClick = () => {
     // توجيه المستخدم إلى رابط واتساب عند النقر على الزر
-    window.open('https://wa.me/+963993464702', '_blank');
+    window.open('https://wa.me/+963995871868', '_blank');
   };
   return (
     <motion.section
