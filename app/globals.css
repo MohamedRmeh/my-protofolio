@@ -11,7 +11,7 @@
 body {
   background-color: #000;
   color: white;
-  @apply dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2];
+  @apply bg-black bg-dot-white/[0.2];
 }
 
 .gradient-text {
@@ -29,6 +29,3 @@ body {
   background-color: rgba(0, 0, 0, 0.593);
 }
 
-/* .common-background {
-  @apply dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2];
-} */
