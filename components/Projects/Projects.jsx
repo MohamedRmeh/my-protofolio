@@ -31,7 +31,7 @@ export default function Projects() {
     {
       image: "/images/cozy.png",
       text: "E-Commerce",
-      desc: "We design & develop user-engaging eCommerce applications that improve ROI, increase brand exposure, and skyrocket your online business.",
+      desc: "We design & develop user-engaging eCommerce web app that improve ROI, increase brand exposure, and skyrocket your online business",
     },
   ];
 
@@ -41,9 +41,9 @@ export default function Projects() {
         <h1 className="tracking-[3px] text-xl sm:text-xl gradient-text opacity-80 uppercase">
           Build Your Dreams
         </h1>
-        <p className="sm:text-2xl text-2xl gradient-text text-center">
+        <p className="sm:text-2xl text-2xl gradient-text text-center md:w-[900px]">
           Web app development, design and consulting company for those who want
-          to be <br /> successful
+          to be successful
         </p>
       </div>
       <div className="md:grid md:grid-cols-12 md:gap-6 sm:mt-10 mt-24">
@@ -56,8 +56,8 @@ export default function Projects() {
               From Idea to Market
             </h3>
             <p className="text-xl gradient-text">
-              We make sure that we build the application with passion and ensure
-              it suits your dream.
+              We make sure that we build the web app with passion and ensure it
+              suits your dream.
             </p>
           </div>
           <div className="mb-8 md:mb-0">
@@ -93,9 +93,11 @@ export default function Projects() {
                 <Image
                   src={selectedImage}
                   width={1000}
-                  height={500}
+                  height={600}
                   alt="image"
                   className=" shadow-2xl"
+                  loading="eager"
+                  priority
                 />
               </motion.div>
             </div>

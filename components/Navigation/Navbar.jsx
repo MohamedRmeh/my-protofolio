@@ -1,4 +1,4 @@
-import { SiGithub, SiLinkedin, SiInstagram } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiInstagram, SiGmail } from "react-icons/si";
 import Link from "next/link";
 
 export default function Navbar() {
@@ -9,9 +9,9 @@ export default function Navbar() {
       Icon: SiGithub,
     },
     {
-      link: "/",
-      label: "linkedin",
-      Icon: SiLinkedin,
+      link: "mailto:mrme02891@gmail.com",
+      label: "gmail",
+      Icon: SiGmail,
     },
     {
       link: "/",

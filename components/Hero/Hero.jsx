@@ -77,6 +77,8 @@ export default function Hero() {
           width={540}
           height={500}
           alt="Hero"
+          priority
+          loading="eager"
         />
       </motion.div>
     </motion.section>

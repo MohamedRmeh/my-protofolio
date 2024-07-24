@@ -1,17 +1,17 @@
 import React from 'react'
-import { SiGithub, SiLinkedin, SiInstagram } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiInstagram, SiGmail } from "react-icons/si";
 import Link from 'next/link'
 export default function Footer () {
   const social = [
     {
-      link: "/",
+      link: "https://github.com/MohamedRmeh",
       label: "github",
       Icon: SiGithub,
     },
     {
-      link: "/",
-      label: "linkedin",
-      Icon: SiLinkedin,
+      link: "mailto:mrme02891@gmail.com",
+      label: "gmail",
+      Icon: SiGmail,
     },
     {
       link: "/",
