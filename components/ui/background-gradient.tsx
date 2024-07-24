@@ -40,8 +40,8 @@ export const BackgroundGradient = ({
                     backgroundSize: animate ? "400% 400%" : undefined,
                 }}
                 className={cn(
-                    "absolute inset-0 rounded-md z-[1] opacity-60 group-hover:opacity-100 blur-xl  transition duration-500 will-change-transform",
-                    "bg-[radial-gradient(circle_farthest-side_at_0_100%,#333,transparent),radial-gradient(circle_farthest-side_at_100%_0,#000,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#000,transparent),radial-gradient(circle_farthest-side_at_0_0,#333,#000)]"
+                    "absolute inset-0 rounded-lg z-[1] opacity-50 group-hover:opacity-100 blur-md  transition duration-500 will-change-transform",
+                    "bg-[radial-gradient(circle_farthest-side_at_0_100%,#a0aec0,transparent),radial-gradient(circle_farthest-side_at_100%_0,#000,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#000,transparent),radial-gradient(circle_farthest-side_at_0_0,#a0aec0,#a0aec0)]"
                 )}
             />
             <motion.div
@@ -61,8 +61,8 @@ export const BackgroundGradient = ({
                     backgroundSize: animate ? "400% 400%" : undefined,
                 }}
                 className={cn(
-                    "absolute inset-0 rounded-md z-[1] will-change-transform",
-                    "bg-[radial-gradient(circle_farthest-side_at_0_100%,#333,transparent),radial-gradient(circle_farthest-side_at_100%_0,#000,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#000,transparent),radial-gradient(circle_farthest-side_at_0_0,#333,#000)]"
+                    "absolute inset-0 rounded-lg z-[1] will-change-transform",
+                    "bg-[radial-gradient(circle_farthest-side_at_0_100%,#a0aec0,transparent),radial-gradient(circle_farthest-side_at_100%_0,#000,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#a0aec0,transparent),radial-gradient(circle_farthest-side_at_0_0,#a0aec0,#a0aec0)]"
                 )}
             />
 

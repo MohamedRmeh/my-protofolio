@@ -93,7 +93,7 @@ export default function Projects() {
                 <Image
                   src={selectedImage}
                   width={1000}
-                  height={600}
+                  height={500}
                   alt="image"
                   className=" shadow-2xl"
                   loading="eager"
