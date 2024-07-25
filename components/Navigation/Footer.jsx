@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiGithub, SiLinkedin, SiInstagram, SiGmail } from "react-icons/si";
+import { SiGithub, SiWhatsapp, SiGmail } from "react-icons/si";
 import Link from 'next/link'
 export default function Footer () {
   const social = [
@@ -14,9 +14,9 @@ export default function Footer () {
       Icon: SiGmail,
     },
     {
-      link: "/",
-      label: "instagram",
-      Icon: SiInstagram,
+      link: "https://wa.me/+963995871868",
+      label: "whatsapp",
+      Icon: SiWhatsapp,
     },
   ];
   return (

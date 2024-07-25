@@ -2,34 +2,41 @@
 import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Projects() {
   const [selectedImage, setSelectedImage] = useState("/images/dashboard.png");
+  const [selectedLink, setSelectedLink] = useState("https://admin-dashboard-orcin-six.vercel.app");
   const [selectedDiv, setSelectedDiv] = useState(0);
 
-  const handleLinkClick = (image, index) => {
+  const handleLinkClick = (image, linkProject, index) => {
     setSelectedImage(image);
+    setSelectedLink(linkProject)
     setSelectedDiv(index);
   };
 
   const data = [
     {
       image: "/images/dashboard.png",
+      linkProject: 'https://admin-dashboard-orcin-six.vercel.app',
       text: "Logistics",
       desc: "Our high-end tech solutions revamp the Logistics industry and assist it to offer awesome experience.",
     },
     {
       image: "/images/proto.png",
+      linkProject: 'https://github.com/MohamedRmeh/Protofolio-mo',
       text: "Excellence in Designs",
       desc: "We are distinguished by providing unique designs that bear our own mark and distinguish us from others.",
     },
     {
       image: "/images/yourdesimg.png",
+      linkProject: 'https://github.com/MohamedRmeh/yourdes',
       text: "Business Digitalization",
       desc: " Our high-end tech are able to transfer your traditional operation to Digitalization with high performance without any interruption.",
     },
     {
       image: "/images/cozy.png",
+      linkProject: 'https://www.cozyfurniturezaz.com',
       text: "E-Commerce",
       desc: "We design & develop user-engaging eCommerce web app that improve ROI, increase brand exposure, and skyrocket your online business",
     },
@@ -41,7 +48,7 @@ export default function Projects() {
         <h1 className="tracking-[3px] text-xl sm:text-xl gradient-text opacity-80 uppercase">
           Build Your Dreams
         </h1>
-        <p className="sm:text-2xl text-2xl gradient-text text-center md:w-[900px]">
+        <p className="sm:text-3xl text-2xl gradient-text text-center md:w-[900px]">
           Web app development, design and consulting company for those who want
           to be successful
         </p>
@@ -64,7 +71,7 @@ export default function Projects() {
             {data.map((item, index) => (
               <div
                 key={index}
-                onClick={() => handleLinkClick(item.image, index)}
+                onClick={() => handleLinkClick(item.image, item.linkProject, index)}
                 className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
                   selectedDiv === index ? "bg-zinc-900" : "bg-zinc-950"
                 } border-zinc-800 cursor-pointer shadow-zinc-950 shadow-2xl`}
@@ -90,6 +97,7 @@ export default function Projects() {
                 transition={{ duration: 0.5 }}
                 className="md:max-w-none mx-auto rounded object-cover"
               >
+              <Link href={selectedLink}>
                 <Image
                   src={selectedImage}
                   width={1000}
@@ -98,7 +106,8 @@ export default function Projects() {
                   className=" shadow-2xl"
                   loading="eager"
                   priority
-                />
+                  />
+                  </Link>
               </motion.div>
             </div>
           </div>
