@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Projects() {
   const [selectedImage, setSelectedImage] = useState("/images/dashboard.png");
-  const [selectedLink, setSelectedLink] = useState("https://admin-dashboard-orcin-six.vercel.app");
+  const [selectedLink, setSelectedLink] = useState("https://admin-for-mostaql.vercel.app");
   const [selectedDiv, setSelectedDiv] = useState(0);
 
   const handleLinkClick = (image, linkProject, index) => {
@@ -18,13 +18,13 @@ export default function Projects() {
   const data = [
     {
       image: "/images/dashboard.png",
-      linkProject: 'https://admin-dashboard-orcin-six.vercel.app',
+      linkProject: 'https://admin-for-mostaql.vercel.app',
       text: "Logistics",
       desc: "Our high-end tech solutions revamp the Logistics industry and assist it to offer awesome experience.",
     },
     {
-      image: "/images/proto.png",
-      linkProject: 'https://github.com/MohamedRmeh/Protofolio-mo',
+      image: "/images/store.png",
+      linkProject: 'https://syria-store.vercel.app',
       text: "Excellence in Designs",
       desc: "We are distinguished by providing unique designs that bear our own mark and distinguish us from others.",
     },
